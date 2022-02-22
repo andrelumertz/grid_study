@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+
+    display:grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+     
+     grid-template-rows: 70px 1fr 100px;
+     grid-template-columns: 2fr;
+
+     font-family: 'Roboto', sans-serif;
+   
+}
+
+
+header {
+    background-color: #fff;
+    color: #000;
+    grid-area: header;
+    
+}
+
+.img_logo {
+    width:50px;
+    color: #D6000D;
+}
+
+.nav {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.nav a {
+  
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5em;
+
+}
+
+.container {
+    max-width:900px;
+    
+}
+
+
+button {
+
+width: 110px;
+height: 30px;
+border-radius: 8px;
+border-style: none;
+background-color: #D6000D;
+color: #fff;
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+cursor: pointer;
+
+}
+
+
+.content_main {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top:80px;
+}
+
+
+.grid_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img_hero {
+    
+    height: 300px;
+    width: 300px;
+}
+
+.content_second {
+    margin-top:25px;
+}
+
+.content_second p {
+    font-weight: bold
+}
+
+.content_second h2 {
+    color: #D6000D;
+    
+}
+
+.content_second button {
+    width: 170px;
+    height: 40px;
+    font-size: 14px;
+    
+}
+
+.services {
+    margin-top:150px;
+    margin-bottom:150px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    
+
+}
+
+.list ul li  {
+   list-style: none;
+   margin-left: -40px;
+   
+}
+
+
+.list i {
+    font-size: 20px;
+    color: #D6000D;
+    padding-right:0.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.call {
+    margin-top:40px;
+    font-weight:bold
+}
+
+.call input {
+    background-color: rgb(230, 230, 230);
+    border-radius: 4px;
+    border-style: none;
+    height:40px;
+    padding-left: 14px;
+}
+
+#button_call {
+width: 160px;
+height: 40px;
+border-radius: 8px;
+border-style: none;
+background-color: #D6000D;
+color: #fff;
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+cursor: pointer;
+}
+
+
+.rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 900px;
+    gap: 20px;
+    margin: 0 auto;
+
+}
+
+.social i {
+    color: #D6000D;
+    font-size: 30px;
+    margin-left: 14px;
+}
+
+footer {
+    background-color: #121212;
+    color: #fff;
+    grid-area: footer;
+    height:200px;
+}
